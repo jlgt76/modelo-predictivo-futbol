@@ -1,0 +1,182 @@
+{
+  "sha256_v3": "c195a52cfdff831c1c847e50e30b031c541adec03f4ee6273183033369819d19",
+  "integridad_sqlite": "ok",
+  "claves_huerfanas": 0,
+  "partidos_con_autorreferencia": 0,
+  "claves_canonicas_repetidas": 0,
+  "archivos_brutos": {
+    "existentes_y_hash_valido": 35,
+    "total": 35
+  },
+  "contraste_independiente": {
+    "fuente": "https://www.bundesliga.com/en/bundesliga/matchday/2024-2025/34",
+    "universo": "BL1 2024/25 jornada 34",
+    "esperados": 9,
+    "en_v3": 9,
+    "coinciden_identidad_fecha_marcador": 9
+  },
+  "actualizacion_2026_27": {
+    "BL1": {
+      "filas": 306,
+      "marcadores": 36,
+      "ultima_fecha": "2026-09-20"
+    },
+    "FL1": {
+      "filas": 306,
+      "marcadores": 45,
+      "ultima_fecha": "2026-09-20"
+    },
+    "PD": {
+      "filas": 380,
+      "marcadores": 69,
+      "ultima_fecha": "2026-09-20"
+    },
+    "PL": {
+      "filas": 380,
+      "marcadores": 50,
+      "ultima_fecha": "2026-09-20"
+    },
+    "SA": {
+      "filas": 380,
+      "marcadores": 50,
+      "ultima_fecha": "2026-09-20"
+    },
+    "CL": {
+      "filas": 0,
+      "marcadores": 0,
+      "ultima_fecha": null
+    }
+  },
+  "perfil_d_menos_2": {
+    "perfil": "reconstruido_por_fecha",
+    "referencia": "2025-06-03",
+    "hasta": "2025-06-01",
+    "margen_dias": 2,
+    "available_at_atribuido": false,
+    "uso": "candidatos_para_auditoria",
+    "total": 7720,
+    "por_competicion_temporada": [
+      {
+        "competicion": "BL1",
+        "temporada": "2021-22",
+        "filas": 306
+      },
+      {
+        "competicion": "BL1",
+        "temporada": "2022-23",
+        "filas": 306
+      },
+      {
+        "competicion": "BL1",
+        "temporada": "2023-24",
+        "filas": 306
+      },
+      {
+        "competicion": "BL1",
+        "temporada": "2024-25",
+        "filas": 306
+      },
+      {
+        "competicion": "CL",
+        "temporada": "2021-22",
+        "filas": 125
+      },
+      {
+        "competicion": "CL",
+        "temporada": "2022-23",
+        "filas": 125
+      },
+      {
+        "competicion": "CL",
+        "temporada": "2023-24",
+        "filas": 125
+      },
+      {
+        "competicion": "CL",
+        "temporada": "2024-25",
+        "filas": 189
+      },
+      {
+        "competicion": "FL1",
+        "temporada": "2021-22",
+        "filas": 380
+      },
+      {
+        "competicion": "FL1",
+        "temporada": "2022-23",
+        "filas": 380
+      },
+      {
+        "competicion": "FL1",
+        "temporada": "2023-24",
+        "filas": 306
+      },
+      {
+        "competicion": "FL1",
+        "temporada": "2024-25",
+        "filas": 306
+      },
+      {
+        "competicion": "PD",
+        "temporada": "2021-22",
+        "filas": 380
+      },
+      {
+        "competicion": "PD",
+        "temporada": "2022-23",
+        "filas": 380
+      },
+      {
+        "competicion": "PD",
+        "temporada": "2023-24",
+        "filas": 380
+      },
+      {
+        "competicion": "PD",
+        "temporada": "2024-25",
+        "filas": 380
+      },
+      {
+        "competicion": "PL",
+        "temporada": "2021-22",
+        "filas": 380
+      },
+      {
+        "competicion": "PL",
+        "temporada": "2022-23",
+        "filas": 380
+      },
+      {
+        "competicion": "PL",
+        "temporada": "2023-24",
+        "filas": 380
+      },
+      {
+        "competicion": "PL",
+        "temporada": "2024-25",
+        "filas": 380
+      },
+      {
+        "competicion": "SA",
+        "temporada": "2021-22",
+        "filas": 380
+      },
+      {
+        "competicion": "SA",
+        "temporada": "2022-23",
+        "filas": 380
+      },
+      {
+        "competicion": "SA",
+        "temporada": "2023-24",
+        "filas": 380
+      },
+      {
+        "competicion": "SA",
+        "temporada": "2024-25",
+        "filas": 380
+      }
+    ]
+  },
+  "reserva_excluida_de_muestras": "2025/26"
+}

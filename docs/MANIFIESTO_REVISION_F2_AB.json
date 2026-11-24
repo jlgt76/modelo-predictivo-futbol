@@ -1,0 +1,25 @@
+{
+  "revision": "F2-AB-1",
+  "fecha": "2026-11-24",
+  "estado_F2_A": "no_aceptado",
+  "estado_F2_B": "no_aceptado",
+  "temporada_reservada": "2025/26",
+  "gasto_mxn": 0,
+  "solicitudes_autenticadas": 0,
+  "pruebas_locales_aprobadas": 12,
+  "base_v3_sin_cambios": true,
+  "sha256": {
+    "data/canonical/openfootball_v3.sqlite": "c195a52cfdff831c1c847e50e30b031c541adec03f4ee6273183033369819d19",
+    "scripts/auditar_base_f2.py": "136f1988ba81cfac041bbf82956b668c009ff6ce06f934d924e908489b0e7daf",
+    "scripts/perfil_f2.py": "6d97f3e2ba89df19a7507346c9e79674380e3a4a78a27f651ce59b5d51c8f110",
+    "scripts/ingesta_proveedores_f2.py": "d2530d1edc12497eab8734bb22805cebe78dda1de1fa2039a8941e82a4ce8947",
+    "scripts/test_ingesta_proveedores_f2.py": "e3f16320cdb35b00d865689bf2fcd5154857274be8a51ba7af58e43a052dda27",
+    "docs/AUDITORIA_BASE_F2.json": "4e500219a496dfd2572373973d842a30fc9ee821ab2ed7bc5d2f1af67f9f1619",
+    "docs/COBERTURA_PROVEEDORES_F2.json": "f87e94a98227c001a175af6665d467e19575b9d17b0f8b13d7658af56c6a5581",
+    "docs/COBERTURA_F2.md": "a8348a1533cb3e344f56e52caac5e2bf1bd941d4f6357dd41569d92893c285c9",
+    "docs/INFORME_F2.md": "5378bb1728e0c4f4b257e37c2431aa9a11e4895d81570871143e28b43134083d",
+    "PLAN.md": "162162c43cc47d70182e0f69e1f2a7866617465d98c2db82f63795fdb2cf06c2",
+    "DECISIONES_TECNICAS.md": "4ea0e45d9454124fb4318aafc07ed264bc2bb36affeed7b5b09d5affd4960183",
+    "docs/MANIFIESTO_PROVEEDORES_F2.json": "d89188de74add1bc9f88135ca0fa145f75e2571b6e443788a5dbf2ce7af035e9"
+  }
+}

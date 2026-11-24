@@ -1,0 +1,45 @@
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Credenciales y secretos
+.env
+.env.*
+!.env.example
+*credentials*.json
+*secrets*.json
+*permisos*.json
+*.key
+*.pem
+
+# Datos y resultados experimentales
+data/
+
+# Bases de datos
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+
+# Modelos entrenados
+*.joblib
+*.pkl
+*.pickle
+*.onnx
+
+# Archivos temporales
+*.log
+*.tmp
+.cache/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

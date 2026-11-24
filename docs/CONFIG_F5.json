@@ -1,0 +1,55 @@
+{
+  "version": "f5_experimental_v1",
+  "semilla": 54673,
+  "hilos": 1,
+  "dias_corte": 2,
+  "dias_bloque": 28,
+  "inicio_evaluacion": "2025-01-01",
+  "bootstrap": 800,
+  "presupuesto": {"clasificador_por_familia": 12, "regresion_por_familia": 6, "hibrido_adicional_por_familia": 4, "ensemble_por_familia": 4, "suscripciones_mxn": 0},
+  "grupos": {
+    "A": ["{lado}_w5_ppg", "{lado}_w10_gf", "{lado}_w10_ga", "{lado}_w10_win", "{lado}_w10_draw", "{lado}_w20_loss", "{lado}_ponderada_ppg", "delta_w10_dg", "delta_w20_ppg"],
+    "B": ["{lado}_ataque_rel", "{lado}_concesion_rel", "{lado}_rival_ppg_previo", "delta_ppg_ponderado_rival"],
+    "C": ["l_rol_home_ppg", "v_rol_away_ppg", "l_rol_home_n", "v_rol_away_n", "l_rol_home_vs_general_gf", "v_rol_away_vs_general_gf"],
+    "D": ["competicion", "{lado}_dias_ultimo_registrado", "{lado}_partidos_reg_14d", "{lado}_sin_historia_comp"],
+    "E": ["{lado}_w10_cs", "{lado}_w10_btts", "{lado}_w10_over25", "{lado}_racha_n", "{lado}_racha_tipo"],
+    "Q": ["l_h2h_n", "l_h2h_draw", "l_h2h_gf", "l_h2h_ga", "l_h2h_ultimo_dias"],
+    "J": ["elo_l", "elo_v", "elo_d", "elo_p1", "elo_px"],
+    "F": ["p2_l", "p2_v", "dc2_px", "dc2_bajos"]
+  },
+  "conjuntos": {"reducido": "AB", "intermedio": "ABCD", "ampliado": "ABCDEQJF"},
+  "clasificadores": {
+    "X1": {"familia":"xgb","grupos":"ABCD","params":{"n_estimators":160,"max_depth":3,"learning_rate":0.045,"min_child_weight":8,"subsample":0.85,"colsample_bytree":0.85,"reg_alpha":0.2,"reg_lambda":4}},
+    "X2": {"familia":"xgb","grupos":"ABCDEQJF","params":{"n_estimators":200,"max_depth":2,"learning_rate":0.035,"min_child_weight":12,"subsample":0.9,"colsample_bytree":0.7,"reg_alpha":0.6,"reg_lambda":6}},
+    "LGB1": {"familia":"lgb","grupos":"ABCD","params":{"n_estimators":105,"max_depth":4,"num_leaves":12,"learning_rate":0.042,"min_child_samples":40,"subsample":0.85,"colsample_bytree":0.85,"reg_alpha":0.2,"reg_lambda":4}},
+    "LGB2": {"familia":"lgb","grupos":"ABCDEQJF","params":{"n_estimators":130,"max_depth":3,"num_leaves":7,"learning_rate":0.035,"min_child_samples":55,"subsample":0.9,"colsample_bytree":0.75,"reg_alpha":0.55,"reg_lambda":6}},
+    "RF1": {"familia":"rf","grupos":"AB","params":{"n_estimators":105,"max_depth":5,"min_samples_split":44,"min_samples_leaf":24,"max_features":0.66,"bootstrap":true}},
+    "RF2": {"familia":"rf","grupos":"ABCD","params":{"n_estimators":120,"max_depth":7,"min_samples_split":50,"min_samples_leaf":28,"max_features":0.5,"bootstrap":false}},
+    "ET1": {"familia":"et","grupos":"AB","params":{"n_estimators":105,"max_depth":7,"min_samples_leaf":22,"max_features":0.75,"bootstrap":false}},
+    "ET2": {"familia":"et","grupos":"ABCDEQJF","params":{"n_estimators":105,"max_depth":7,"min_samples_leaf":22,"max_features":0.75,"bootstrap":false}},
+    "ETmedio": {"familia":"et","grupos":"ABCD","params_de":"ET2"},
+    "H4": {"familia":"xgb","grupos":"ABCDJ","params_de":"X1"}
+  },
+  "ablacion": {"modelo":"ET2","retirar":["A","B","C","D","Q","JF"],"solo":"seleccion","comparacion_intermedia":"ETmedio"},
+  "generativos": {
+    "H1": {"familia":"xgb","grupos":"ABCD","params":{"n_estimators":90,"max_depth":2,"learning_rate":0.045,"min_child_weight":14,"subsample":0.9,"colsample_bytree":0.85,"reg_alpha":0.3,"reg_lambda":6}},
+    "H2": {"familia":"lgb","grupos":"ABCD","params":{"n_estimators":90,"max_depth":3,"num_leaves":7,"learning_rate":0.045,"min_child_samples":55,"subsample":0.9,"colsample_bytree":0.85,"reg_alpha":0.3,"reg_lambda":6}},
+    "H3": {"base":"H1","vida_media":365,"min_oof":300},
+    "H5": {"familia":"xgb","offset":"P2","grupos":"ABCD","min_oof":300,"params":{"n_estimators":48,"max_depth":2,"learning_rate":0.035,"min_child_weight":16,"subsample":0.9,"colsample_bytree":0.9,"reg_alpha":0.8,"reg_lambda":9}}
+  },
+  "ensembles": {
+    "componentes":["X1","LGB1","B3"],
+    "S1":"media",
+    "S2":"convexo_slsqp",
+    "S3":"stacking_logistica_C_0.15",
+    "G1":{"H1":0.5,"H2":0.5},
+    "min_oof":400
+  },
+  "senal_elo":{"K":20,"localia":55,"ambito":"competicion"},
+  "early_stopping":{"familia":"xgb","alto":16,"dias_validacion":56,"min_validacion":120,"min_entrenamiento":350},
+  "calibracion":{"min_por_clase":45,"dias_validacion":70,"mejora_minima":0.001,"temperatura":[0.5,3.0],"escala_tasas":[0.8,1.2],"regularizacion_logistica_C":0.25,"isotonica":"excluida por soporte por clase y partición"},
+  "soporte":{"max_goles":32,"cola_max":1e-8,"rango_lambda":[0.02,6]},
+  "promocion":{"umbral_1x2":0.005,"umbral_marcador":0.005,"max_deterioro_brier":0.005,"max_deterioro_mercados":0.005,"cobertura_minima":0.99,"referencia_1x2":"E2","referencia_generativa":"P2","verificar_tambien":["P2","DC2","L2"]},
+  "referencias":["B0","B1","B2","B3","P2","DC2","E2","L2"],
+  "interpretacion":{"perm_repeticiones":3,"shap_muestra_por_bloque":24,"interacciones_muestra":6}
+}

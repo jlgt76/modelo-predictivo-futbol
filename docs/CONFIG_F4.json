@@ -1,0 +1,46 @@
+{
+  "version": "f4_estadistico_v1",
+  "familias": {
+    "poisson": [{"id":"P1","l2":4,"vida_media":null},{"id":"P2","l2":8,"vida_media":365}],
+    "dixon_coles": [{"id":"DC1","l2":4,"vida_media":null},{"id":"DC2","l2":8,"vida_media":365}],
+    "elo": [
+      {"id":"E1","K":20,"localia":55,"regresion":0,"margen":false,"ambito":"competicion"},
+      {"id":"E2","K":25,"localia":55,"regresion":0.2,"margen":true,"ambito":"competicion"},
+      {"id":"E3","K":20,"localia":55,"regresion":0.2,"margen":false,"ambito":"enlazado"}
+    ],
+    "logistica": [
+      {"id":"L1","l2":0.03,"grupos":["A"]},
+      {"id":"L2","l2":0.03,"grupos":["A","B","C"]},
+      {"id":"L3","l2":0.09,"grupos":["A","B","C","D"]}
+    ]
+  },
+  "features": {
+    "A":["l_w5_ppg","v_w5_ppg","l_w10_gf","v_w10_gf","l_w10_ga","v_w10_ga","delta_w20_ppg"],
+    "B":["l_ataque_rel","v_ataque_rel","l_concesion_rel","v_concesion_rel","delta_ponderada_ppg","delta_rival_ppg_previo"],
+    "C":["l_rol_home_ppg","v_rol_away_ppg","l_w20_n","v_w20_n","competicion"],
+    "D":["l_dias_ultimo_registrado","v_dias_ultimo_registrado","delta_partidos_reg_14d","l_sin_historia_comp","v_sin_historia_comp"]
+  },
+  "variables_por_modelo": {
+    "B0":["resultado previo"],
+    "B1":["resultado previo","competicion"],
+    "B2":["goles previos","competicion"],
+    "B3":["B1","l_w10_ppg","v_w10_ppg","l_w10_n","v_w10_n"],
+    "Poisson y Dixon-Coles":["goles previos","competicion","identidades de equipo por competición","fecha calendario para corte y ponderación","neutralidad confirmada para sensibilidad"],
+    "Elo":["resultado previo","goles previos para margen opcional","identidades de equipo","competicion","temporada para regresión","fecha para agrupación","neutralidad confirmada para sensibilidad"],
+    "Logistica":["solo grupos A–D según candidato"]
+  },
+  "excluidas_por_defecto": ["match_id como predictor","raw_id","source_row","available_at","sede desconocida como verificación","fecha como valor numérico de predictor","jornada","fase retrospectiva","variables avanzadas","cuotas","etiquetas del objetivo", "columnas X fuera de la lista"],
+  "condicionadas": ["neutralidad confirmada solo en generativos/Elo, con neutralización descriptiva", "fuerza enlazada Elo como sensibilidad, no como escala comparable entre componentes desconectados", "elastic net reservado: L2 es suficiente como primera comparación reproducible"],
+  "semilla": 72604,
+  "bootstrap": 1000,
+  "presupuesto_maximo_por_familia": 12,
+  "dias_bloque": 28,
+  "dias_corte": 2,
+  "refit": "corte D−2 de la primera fecha de cada bloque para parámetros; Elo actualiza por fecha con partidos elegibles",
+  "seleccion": "Log Loss agregado 2022/23 y 2023/24; desempate por orden configurado",
+  "promocion": "solo selección; mejora al menos 0.005 sobre B1 en ambas temporadas, IC95 pareado de diferencia completamente menor a cero, ganar también a B0/B2/B3 en el agregado; en caso contrario conservar la mejor referencia simple",
+  "calibracion": "temperatura escalar [0.5,3] sobre OOS de 2024/25 anterior al corte del primer objetivo de evaluación; un calibrador por candidato seleccionado",
+  "lbfgsb": {"maxiter": 180, "gtol": 0.000001, "ftol": 0.0000000001},
+  "soporte": {"max_goles": 32, "rango_lambda": [0.02,6], "cola_max": 0.00000001},
+  "respaldo": {"min_comp":30,"min_equipo":5,"min_forma":5,"min_generativo_comp":60}
+}

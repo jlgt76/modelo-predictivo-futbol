@@ -1,0 +1,1818 @@
+{
+  "version": "F2-proveedores-1",
+  "alcance": "Evidencia puntual manual y celdas pendientes. Sin respuestas autenticadas archivadas en esta ejecución.",
+  "matriz": [
+    {
+      "proveedor": "football-data",
+      "competicion": "CL",
+      "temporada": "2026/27",
+      "endpoint": "/competitions/CL/matches",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "manual_usuario",
+      "recibidos": 144,
+      "finalizados": 72,
+      "sin_correspondencia_openfootball": 144
+    },
+    {
+      "proveedor": "football-data",
+      "competicion": "PL",
+      "temporada": "2026/27",
+      "endpoint": "/competitions/PL/matches",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "football-data",
+      "competicion": "PD",
+      "temporada": "2026/27",
+      "endpoint": "/competitions/PD/matches",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "football-data",
+      "competicion": "BL1",
+      "temporada": "2026/27",
+      "endpoint": "/competitions/BL1/matches",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "football-data",
+      "competicion": "SA",
+      "temporada": "2026/27",
+      "endpoint": "/competitions/SA/matches",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "football-data",
+      "competicion": "FL1",
+      "temporada": "2026/27",
+      "endpoint": "/competitions/FL1/matches",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2022/23",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2023/24",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "CL",
+      "temporada": "2024/25",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2022/23",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2023/24",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "manual_usuario",
+      "recibidos": 380
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "manual_usuario",
+      "fixture_id": 1208021,
+      "equipos": 2
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "manual_usuario",
+      "fixture_id": 1208021
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "manual_usuario",
+      "fixture_id": 1208021
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PL",
+      "temporada": "2024/25",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "manual_usuario",
+      "fixture_id": 1208021,
+      "missing_fixture": 5,
+      "questionable": 1,
+      "suspension_confirmada": null
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2022/23",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2023/24",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "PD",
+      "temporada": "2024/25",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2022/23",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2023/24",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "BL1",
+      "temporada": "2024/25",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2022/23",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2023/24",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "SA",
+      "temporada": "2024/25",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2022/23",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2022/23",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2023/24",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2023/24",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures",
+      "variables": [
+        "calendario",
+        "estado",
+        "marcador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures?ids",
+      "variables": [
+        "events",
+        "lineups",
+        "statistics",
+        "players"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/lineups",
+      "variables": [
+        "titulares",
+        "suplentes",
+        "formacion",
+        "entrenador",
+        "id_jugador"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/players",
+      "variables": [
+        "minutos",
+        "posicion",
+        "rating",
+        "goles",
+        "asistencias",
+        "tiros",
+        "pases",
+        "duelos",
+        "entradas",
+        "tarjetas",
+        "porteria"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/statistics",
+      "variables": [
+        "tiros",
+        "posesion",
+        "corners",
+        "pases",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2024/25",
+      "endpoint": "/fixtures/events",
+      "variables": [
+        "eventos"
+      ],
+      "evidencia": "pendiente"
+    },
+    {
+      "proveedor": "api-football",
+      "competicion": "FL1",
+      "temporada": "2024/25",
+      "endpoint": "/injuries",
+      "variables": [
+        "estado",
+        "motivo",
+        "suspension_explicita"
+      ],
+      "evidencia": "pendiente"
+    }
+  ]
+}
